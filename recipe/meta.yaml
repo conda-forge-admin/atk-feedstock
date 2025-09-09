@@ -37,6 +37,7 @@ outputs:
       host:
         - glib
         - libintl-devel  # [not linux]
+        - zlib
       run:
         - libglib
       run_constrained:
