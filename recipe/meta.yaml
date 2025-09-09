@@ -39,6 +39,7 @@ outputs:
         - dbus
         - glib
         - libintl-devel  # [not linux]
+        - libxml2-devel
         - zlib
       run:
         - libglib
