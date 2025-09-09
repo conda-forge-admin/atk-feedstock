@@ -36,6 +36,7 @@ outputs:
         - pkg-config
         - glib  # [build_platform != target_platform]
       host:
+        - dbus
         - glib
         - libintl-devel  # [not linux]
         - zlib
