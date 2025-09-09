@@ -36,9 +36,9 @@ outputs:
         - pkg-config
         - glib  # [build_platform != target_platform]
       host:
-        - dbus
+        - dbus              # [unix]
         - glib
-        - libintl-devel  # [not linux]
+        - libintl-devel     # [not linux]
         - libxml2-devel
         - zlib
       run:
