@@ -5,13 +5,7 @@ set -ex
 meson_config_args=(
     --backend=ninja
     -Ddocs=false
-    -Dgio_sniffing=false
-    -Dinstalled_tests=false
-    -Drelocatable=true
     -Dintrospection=enabled
-    -Dgtk_doc=false
-    -Dman=false
-    -Dothers=enabled
 )
 
 if [[ "$target_platform" = osx-* ]] ; then
