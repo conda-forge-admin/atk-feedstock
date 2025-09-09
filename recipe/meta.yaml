@@ -1,4 +1,4 @@
-{% set version = "2.38.0" %}
+{% set version = "2.57.2" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 {% set abi_version = "1.0" %}
 
@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: http://ftp.gnome.org/pub/gnome/sources/atk/{{ major_minor }}/atk-{{ version }}.tar.xz
-  sha256: ac4de2a4ef4bd5665052952fe169657e65e895c5057dffb3c2a810f6191a0c36
+  url: https://gitlab.gnome.org/GNOME/at-spi2-core/-/archive/{{ version }}/at-spi2-core-{{ version }}.tar.gz
+  sha256: 42f52b88f07396fbc784edf4680ac9853e82f13802bd530f90c00f770d199293
 
 build:
-  number: 2
+  number: 0
   run_exports:
     - atk-{{ abi_version }} >={{ version }}
 
