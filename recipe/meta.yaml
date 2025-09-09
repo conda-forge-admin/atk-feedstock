@@ -24,16 +24,17 @@ outputs:
         - atk-{{ abi_version }} >={{ version }}
     requirements:
       build:
+        - {{ stdlib('c') }}
+        - {{ compiler('c') }}
+        # Required for the conda-forge meson cross-compilation config to work
+        - {{ compiler('cxx') }}
+        - cmake
         - meson
         - gobject-introspection 1.*
         - ninja
         - python *
         - pkg-config
-        - {{ compiler('c') }}
-        - {{ stdlib('c') }}
         - glib  # [build_platform != target_platform]
-        # Required for the conda-forge meson cross-compilation config to work
-        - {{ compiler('cxx') }}
       host:
         - glib
         - libintl-devel  # [not linux]
