@@ -1,4 +1,4 @@
-{% set version = "2.57.2" %}
+{% set version = "2.56.4" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 {% set abi_version = "1.0" %}
 
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://gitlab.gnome.org/GNOME/at-spi2-core/-/archive/{{ version }}/at-spi2-core-{{ version }}.tar.gz
-  sha256: 42f52b88f07396fbc784edf4680ac9853e82f13802bd530f90c00f770d199293
+  sha256: 0642c872ab8820acd0e56f2a08645597cd8c09718e94c090ceded76730d6a76a
 
 build:
   number: 0
