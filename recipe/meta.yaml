@@ -68,6 +68,7 @@ about:
   license: LGPL-2.0-or-later
   license_file: COPYING
   summary: Accessibility Toolkit.
+  dev_url: https://gitlab.gnome.org/GNOME/at-spi2-core
 
 extra:
   recipe-maintainers:
